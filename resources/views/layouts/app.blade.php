@@ -10,9 +10,6 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!--Font Awsome-->
     <link rel="stylesheet" href="{{asset('vendor/fontawesome-free/css/all.min.css')}}">
 
@@ -22,15 +19,17 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{'vendor/css/sb-admin-2.min.css'}}">
+    <link rel="stylesheet" href="{{asset('vendor/css/sb-admin-2.min.css')}}">
+    <link href="{{asset('vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
 </head>
 
 <body class="bg-gradient-primary">
-    @yield('content')
+    <div id="app">
+        @yield('content')
+    </div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-
     <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
 
     <!-- Core plugin JavaScript-->
@@ -38,7 +37,12 @@
     <!-- Custom scripts for all pages-->
     <script src="{{asset('vendor/js/sb-admin-2.min.js')}}"></script>
 
+    <!--Data Tables JavaScript-->
+    <script src="{{asset('vendor/datatables/jquery.dataTables.min.js')}}"></script>
+    <script src="{{asset('vendor/datatables/dataTables.bootstrap4.min.js')}}"></script>
 
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
 
 </html>
