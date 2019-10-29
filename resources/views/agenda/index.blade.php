@@ -20,25 +20,23 @@
     </div>
     <div class="card-body">
         <div class="table-responsive">
-            <table id="dataTable" class="table table-bordered" width="100%" cellspacing="0">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>
-                        <th>#</th>
-                        <th>Name</th>
-                        <th>Desc</th>
-                        <th>Image</th>
-                        <th>Date</th>
-                        <th>Publisher</th>
-                        <th>Created</th>
-                        <th>Updated</th>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
                     </tr>
+                </thead>
                 <tbody>
                     <tr>
-                        <td>1</td>
-
+                        <td>Row 1 Data 1</td>
+                        <td>Row 1 Data 2</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2 Data 1</td>
+                        <td>Row 2 Data 2</td>
                     </tr>
                 </tbody>
-                </thead>
             </table>
         </div>
     </div>
